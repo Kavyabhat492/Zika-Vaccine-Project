@@ -5,6 +5,7 @@ Kavya Gopal Bhat1*, Ramachandra Prasad1
  
 
 ABSTRACT
+
 The Zika virus (ZIKV), primarily transmitted by Aedes mosquitoes, can also spread through blood, sexual contact, or from a mother to her baby. While most infections are either mild or show no symptoms, possible symptoms can include fever, rash, and joint pain. In more severe instances, it may lead to Guillain-Barré syndrome in adults and congenital defects such as microcephaly in infants. A multi-epitope vaccine was specifically developed utilizing three ZIKV proteins—Envelope (E), NS1, and NS3 selected for their importance in immunology and their structural availability.
 The identification of T- and B-cell epitopes was conducted using IEDB; the antigenicity (VaxiJen), toxicity (ToxinPred), and allergenicity (AllerTOP) of MHC I/II epitopes were evaluated, with population coverage verified through IEDB; the chosen epitopes were connected with AAY (for MHC-I) and GPGPG (for MHC-II), and a β-defensin adjuvant was incorporated at the N-terminus.
 The physicochemical characteristics of the vaccine demonstrated its stability and solubility. The prediction of its 3D structure was performed using AlphaFold2 and was subsequently validated with a Ramachandran plot. Discontinuous B-cell epitopes were detected from the refined 3D model to pinpoint regions that are accessible to antibodies based on their conformation.
@@ -13,6 +14,7 @@ The multi-epitope vaccine design demonstrated positive structural and immune cha
 Keywords: Zika virus, multi-epitope vaccine, Envelope(E) protein, NS1 protein, Serine protease NS3, MHC epitope prediction, Molecular docking, Molecular dynamics simulation. 
  
 Introduction
+
 In recent years, the Zika virus (ZIKV) has been spreading widely across the globe. The impact of this infection differs from person to person. To gain a better understanding of this, research is being conducted to assess the effects of the disease(1).  The disease is quickly spreading through several methods, including sexual transmission, from mother to baby during childbirth, and through the transfusion of contaminated blood products, with the primary route of transmission to humans being mosquito bites(2). Zika virus infections in older children and adults often do not show symptoms or result in mild illness. When contracted during pregnancy, it can lead to serious negative effects, including a higher chance of premature birth, fetal death and stillbirth, as well as congenital abnormalities that are collectively recognized in their most severe manifestation as congenital Zika syndrome(3). The Zika virus possesses a distinct ability to exploit the host's biological systems to boost its replication in a tissue-specific way, resulting in pathological consequences. Recent studies have suggested that the Zika virus exhibits evasion and tropism characteristics, allowing it to avoid detection by immune cells and induce serious disease, while also facilitating its entry into new host cells(4).
  The engagement of ZIKV with various pathways in the human host ultimately influences effective virus replication and the resulting pathogenesis associated with ZIKV; nonetheless, the molecular mechanisms behind these host-ZIKV interactions are only beginning to be uncovered(3).
  Since effective treatments are currently lacking and infections are frequently asymptomatic, there is an urgent necessity for a preventive vaccine. DNA vaccines have been shown to be both safe and able to provoke immune responses for numerous pathogens, including flaviviruses. Different vaccines could be tailored for specific target groups, eliciting various immune response types and differing durations of effectiveness. As collaborative efforts progress and our understanding of the immune response to the Zika virus increases, the guidance for formulating a conclusive response to the epidemic will enhance(5).
@@ -22,7 +24,9 @@ Epitope vaccines comprise MHC-restricted epitopes that are identifiable by immun
 Multi-epitopes are seen as a promising strategy for combating tumors and viral infections. A vaccine consisting of multiple overlapping peptides presents a promising strategy for both preventing and treating tumors or viral infections. Multi-epitope vaccines effectively elicit strong, targeted humoral and cellular immune responses, resulting in robust immune responses for each individual epitope contained within the vaccine(10). Multi-epitope-based vaccine designs offer numerous benefits, making them an effective approach for preventive and therapeutic solutions against tumors, bacterial infections, and viral diseases(11). Consequently, the present study has employed various bioinformatics, immunoinformatics, and biophysical strategies to develop a multi-epitope-based vaccine construct targeting the Zika virus and its associated health challenges.
 
 Methodology
+
 ![Figure 1: Schematic workflow of the computational vaccine design.](images/figure1.png)
+
 The research methodology follows this sequence: (1) retrieval of protein sequences from chosen Zika virus proteins; (2) prediction and screening of epitopes considering factors like antigenicity, toxicity, and allergenicity; (3) analysis of population coverage; (4) design of the vaccine construct incorporating linker and adjuvant; (5) Physicochemical properties analysis; (6) prediction of the three-dimensional structure of the construct; (7) prediction of discontinuous B-cell epitopes; (8) molecular docking studies with immune receptors; (9) molecular dynamics simulations for structural evaluation; (10) optimization of codons and in silico cloning into an appropriate expression vector.
 
 2.1	Protein sequence retrieval
@@ -55,15 +59,20 @@ Molecular dynamics simulations were conducted using GROMACS to evaluate the stab
 2.9 Codon optimization and in silico cloning
 The final vaccine construct underwent codon optimization, utilizing the JCat server to modify the nucleotide sequence for effective expression in Escherichia coli K12. This tool modified the codon usage while steering clear of conflicts with prokaryotic ribosome binding sites, as well as avoiding restriction sites and motifs that might lead to mRNA instability. The optimized sequence was subsequently incorporated into the pET28a(+) expression vector through SnapGene software. To ensure proper insertion, orientation, and compatibility with the vector system, restriction sites were included at both ends(36).
 
-3. RESULTS
+RESULTS
+
 3.1 Protein sequence retrieval
 The amino acid sequences for three target proteins—Envelope (E), Non-Structural Protein 1 (NS1), and Non-Structural Protein 3 (NS3)—associated with the Zika virus were obtained from the UniProt database (UniProt ID: Q32ZE1). These proteins were chosen for their critical functions in viral entry, immune evasion, and replication. Each sequence was sourced from the complete polyprotein based on their established locations in the polyprotein annotation. Following are the extracted FASTA sequences:
+
 Envelope (E) Protein: Residues 291–790
+
 >Zika_E_protein 
 PAYSIRCIGVSNRDFVEGMSGGTWVDVVLEHGGCVTVMAQDKPTVDIELVTTTVSNMAEVRSYCYEASISDMASDSRCPTQGEAYLDKQSDTQYVCKRTLVDRGWGNGCGLFGKGSLVTCAKFTCSKKMTGKSIQPENLEYRIMLSVHGSQHSGMIGYETDEDRAKVEVTPNSPRAEATLGGFGSLGLDCEPRTGLDFSDLYYLTMNNKHWLVHKEWFHDIPLPWHAGADTGTPHWNNKEALVEFKDAHAKRQTVVVLGSQEGAVHTALAGALEAEMDGAKGRLFSGHLKCRLKMDKLRLKGVSYSLCTAAFTFTKVPAETLHGTVTVEVQYAGTDGPCKIPVQMAVDMQTLTPVGRLITANPVITESTENSKMMLELDPPFGDSYIVIGVGDKKITHHWHRSGSTIGKAFEATVRGAKRMAVLGDTAWDFGSVGGVFNSLGKGIHQIFGAAFKSLFGGMSWFSQILIGTLLVWLGLNTKNGSISLTCLALG
+
 NS1 Protein: Residues 791–1142
 >Zika_NS1
 GVMIFLSTAVSADVGCSVDFSKKETRCGTGVFIYNDVEAWRDRYKYHPDSPRRLAAAVKQAWEEGICGISSVSRMENIMWKSVEGELNAILEENGVQLTVVVGSVKNPMWRGPQRLPVPVNELPHGWKAWGKSYFVRAAKTNNSFVVDGDTLKECPLEHRAWNSFLVEDHGFGVFHTSVWLKVREDYSLECDPAVIGTAVKGREAAHSDLGYWIESEKNDTWRLKRAHLIEMKTCEWPKSHTLWTDGVEESDLIIPKSLAGPLSHHNTREGYRTQVKGPWHSEELEIRFEECPGTKVYVEETCGTRGPSLRSTTASGRVIEEWCCRECTMPPLSFRAKDGCWYGME
+
 NS3 Protein: Residues 1499–2115
 >zika_NS3
 CGMNPIAIPFAAGAWYVYVKTGKRSGALWDVPAPKEVKKGETTDGVYRVMTRRLLGSTQVGVGVMQEGVFHTMWHVTKGAALRSGEGRLDPYWGDVKQDLVSYCGPWKLDAAWDGLSEVQLLAVPPGERARNIQTLPGIFKTKDGDIGAVALDYPAGTSGSPILDKCGRVIGLYGNGVVIKNGSYVSAITQGKREEETPVECFEPSMLKKKQLTVLDLHPGAGKTRRVLPEIVREAIKKRLRTVILAPTRVVAAEMEEALRGLPVRYMTTAVNVTHSGTEIVDLMCHATFTSRLLQPIRVPNYNLNIMDEAHFTDPSSIAARGYISTRVEMGEAAAIFMTATPPGTRDAFPDSNSPIMDTEVEVPERAWSSGFDWVTDHSGKTVWFVPSVRNGNEIAACLTKAGKRVIQLSRKTFETEFQKTKNQEWDFVITTDISEMGANFKADRVIDSRRCLKPVILDGERVILAGPMPVTHASAAQRRGRIGRNPNKPGDEYMYGGGCAETDEGHAHWLEARMLLDNIYLQDGLIASLYRPEADKVAAIEGEFKLRTEQRKTFVELMKRGDLPVWLAYQVASAGITYTDRRWCFDGTTNNTIMEDSVPAEVWTK
@@ -123,6 +132,7 @@ This classifies the protein as stable.
 Aliphatic index: 65.68
 Grand average of hydropathicity (GRAVY): - 0.342
 Solubility: 0.85
+
 The PSIPRED tool was utilized to predict the secondary structure of the multi-epitope vaccine construct. This evaluation was performed to assess the structural arrangement of the construct regarding alpha-helices (H), beta-strands (E), and coils (C) — characteristics that play a role in the protein's 
 ![Figure 5: Sequence plot representing predicted structural and functional features of the multi-epitope vaccine construct.](images/figure5.png)
 

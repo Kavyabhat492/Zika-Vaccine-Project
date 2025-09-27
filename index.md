@@ -111,9 +111,9 @@ MHC Class I and Class II binding epitopes were identified using the IEDB analysi
 
 Selected epitopes: 
 
-![Table 1:  Epitope prediction and analysis](tables1/table1.png)
+![Table 1:  Epitope prediction and analysis](tables/table1.png)
 
-![Table](tables1/table2.png)
+![Table](tables/table2.png)
 
 In the analysis of population coverage, the effectiveness of the chosen epitopes in eliciting an immune response was evaluated, and the population coverage assessment suggested that the vaccine candidates have the potential to trigger appropriate immune reactions. The findings of the population coverage analysis are illustrated in Figure.
 
@@ -141,6 +141,7 @@ Total number of negatively charged residues (Asp + Glu): 46
 Total number of positively charged residues (Arg + Lys): 72
 
 Atomic composition:
+
 Carbon        C	2961
 Hydrogen    H	4555
 Nitrogen      N	 849
@@ -150,6 +151,7 @@ Formula: C2961H4555N849O835S16
 Total number of atoms: 9216
 
 Extinction coefficients:
+
 Extinction coefficients are in units of M-1 cm-1, at 280 nm measured in water.
 Ext. coefficient   119220
 Abs 0.1% (=1 g/l)   1.809, assuming all pairs of Cys residues form cystines
@@ -157,12 +159,14 @@ Ext. coefficient   118720
 Abs 0.1% (=1 g/l)   1.801, assuming all Cys residues are reduced
 
 Estimated half-life:
+
 The N-terminal of the sequence considered is G (Gly).
 The estimated half-life is: 30 hours (mammalian reticulocytes, in vitro).
                             >20 hours (yeast, in vivo).
                             >10 hours (Escherichia coli, in vivo).
 
 Instability index:
+
 The instability index (II) is computed to be 26.88
 This classifies the protein as stable.
 Aliphatic index: 65.68

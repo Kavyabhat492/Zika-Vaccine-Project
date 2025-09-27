@@ -1,11 +1,6 @@
 ---
-title: "COMPUTATIONAL BASED MULTI-EPITOPE VACCINE DESIGN AGAINST ZIKA VIRUS"
-description: "Designed and developed a computational multi-epitope vaccine against Zika virus using immunoinformatics and molecular modeling. Includes epitope prediction, vaccine construct design, molecular docking, immune simulation, and cloning."
----
-
-
 # COMPUTATIONAL BASED MULTI-EPITOPE VACCINE DESIGN AGAINST ZIKA VIRUS
-
+---
 Kavya Gopal Bhat1*, Ramachandra Prasad1 
 
 1School of Life Sciences, 1Department of Life Sciences, Garden City University, Bangalore, India
